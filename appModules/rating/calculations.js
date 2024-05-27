@@ -1,10 +1,10 @@
-const weight = require('./config')
+const WEIGHT = require('./config')
 
-function createRating(obj, weight) {
+function createRating(obj, WEIGHT) {
     return (
-      obj.gameplay * weight.gameplay +
-      obj.design * weight.design +
-      obj.idea * weight.idea
+      obj.gameplay * WEIGHT.gameplay +
+      obj.design * WEIGHT.design +
+      obj.idea * WEIGHT.idea
     );
   }
 
